@@ -43,7 +43,6 @@ body {
 
 .messages-container {
   background-color: rgba(255, 255, 255, 0.068);
-  padding: 100px;
   display: flex;
   flex-direction: column;
   gap: 10px;
