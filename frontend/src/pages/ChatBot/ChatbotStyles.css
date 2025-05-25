@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+body {
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.text-header {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 70vh;
+  width: 120vh;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.messages-container {
+  background-color: rgba(255, 255, 255, 0.068);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  border-radius: 15px;
+  flex: 1;
+  margin: 0 auto;
+  width: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  min-width: 200px;
+  max-width: 80%;
+  padding: 15px 20px;
+}
+
+.message-bot {
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.068);
+  align-self: flex-start;
+  
+}
+
+.message-user {
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.068);
+  align-self: flex-end;
+}
+
+.message-author {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.message-bot .message-author {
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.message-text {
+  text-align: left;
+  color: #e6e6e6;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.chat-input {
+  width: 800px;
+  border-radius: 15px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.068);
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.send-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.send-button-enabled {
+  background-color: rgba(255, 255, 255, 0.068);
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.068);
+}
+
+.send-button-disabled {
+  background-color: rgba(50, 50, 51, 0.726);
+  color: white;
+  cursor: not-allowed;
+}
+.error-message {
+  color: rgba(206, 99, 99, 0.781);
+  text-align: right;
+}
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
